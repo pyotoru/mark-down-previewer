@@ -7,7 +7,7 @@ export default class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			markdown: "",
+			markdown: placeholder,
 		};
 	}
 	updateMarkdown(markdown) {
@@ -16,14 +16,14 @@ export default class App extends React.Component {
 
 	render() {
 		var inputStyle = {
-			width: "300px",
+			width: "400px",
 			height: "50vh",
 			marginLeft: "auto",
 			marginRight: "auto",
 			padding: "10px",
 		};
 		var outputStyle = {
-			width: "300px",
+			width: "400px",
 			height: "50vh",
 			backgroundColor: "#DCDCDC",
 			marginLeft: "auto",
@@ -72,8 +72,9 @@ export default class App extends React.Component {
 													event.target.value
 												);
 											}}
+											placeholder="sa"
 										>
-											{console.log(this.state.markdown)}
+											<h1>Hello World</h1>
 										</textarea>
 									</div>
 								</div>
@@ -101,3 +102,4 @@ export default class App extends React.Component {
 		);
 	}
 }
+const placeholder = "<h1>Hello world<h1>";
