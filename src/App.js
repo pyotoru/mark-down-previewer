@@ -24,7 +24,7 @@ export default class App extends React.Component {
 		};
 		var outputStyle = {
 			width: "500px",
-			height: "75vh",
+			height: "100%",
 			backgroundColor: "#DCDCDC",
 			marginLeft: "auto",
 			marginRight: "auto",
@@ -35,7 +35,7 @@ export default class App extends React.Component {
 			backgroundColor: "#87CEFA",
 			marginLeft: "auto",
 			marginRight: "auto",
-			height: "1100px",
+			height: "1200px",
 			width: "auto",
 			padding: "10px",
 		};
@@ -125,5 +125,7 @@ Below, I introduce you 3 things you absolutely must take care of while studying 
 <blockquote>
 <b>Do not neglect them or you may never succeed in your life.</b>
 </blockquote>
-<a href="">
+<img src="https://raw.githubusercontent.com/pyotoru/mark-down-previewer/main/src/UK-nature.jpg" alt="a photo of nature in English countryside"
+width = '100%'
+height = 'auto'>
 `;
