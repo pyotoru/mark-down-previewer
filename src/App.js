@@ -16,19 +16,20 @@ export default class App extends React.Component {
 
 	render() {
 		var inputStyle = {
-			width: "400px",
-			height: "50vh",
+			width: "300px",
+			height: "75vh",
 			marginLeft: "auto",
 			marginRight: "auto",
 			padding: "10px",
 		};
 		var outputStyle = {
-			width: "400px",
-			height: "50vh",
+			width: "500px",
+			height: "75vh",
 			backgroundColor: "#DCDCDC",
 			marginLeft: "auto",
 			marginRight: "auto",
 			padding: "10px",
+			textAlign: "left",
 		};
 		var body = {
 			backgroundColor: "#87CEFA",
@@ -88,6 +89,7 @@ export default class App extends React.Component {
 										</Badge>
 									</h1>
 									<div
+										className="align-left"
 										style={outputStyle}
 										dangerouslySetInnerHTML={{
 											__html: marked(this.state.markdown),
@@ -102,4 +104,26 @@ export default class App extends React.Component {
 		);
 	}
 }
-const placeholder = "<h1>Hello world<h1>";
+const placeholder = `<h1>Hello there!<h1>
+<h2>My name is Piotr and this is my markdown-previewer app.</h2>
+<p>Please, visit <a href="https://github.com/pyotoru">my github site</a>.</p>
+Let's talk about code. I will present you <code>Array.prototype.slice()</code> method. Take a look:
+</br></br>
+
+\`\`\`
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1, 3)
+
+console.log(citrus) ==> Orange, Lemon
+\`\`\`
+Below, I introduce you 3 things you absolutely must take care of while studying new things to actually make it work:
+<ul>
+<li>Eat regularly and healthy</li>
+<li>Get enough sleep</li>
+<li>Do workout</li>
+</ul>
+<blockquote>
+<b>Do not neglect them or you may never succeed in your life.</b>
+</blockquote>
+<a href="">
+`;
