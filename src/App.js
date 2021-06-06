@@ -32,7 +32,7 @@ export default class App extends React.Component {
 			textAlign: "left",
 		};
 		var body = {
-			backgroundColor: "#F0F8FF",
+			backgroundColor: "#778899",
 			marginLeft: "auto",
 			marginRight: "auto",
 			height: "1200px",
