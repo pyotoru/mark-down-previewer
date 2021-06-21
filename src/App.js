@@ -23,8 +23,7 @@ export default class App extends React.Component {
 			padding: "10px",
 		};
 		var outputStyle = {
-			width: "500px",
-			height: "100%",
+			width: "300px",
 			backgroundColor: "#DCDCDC",
 			marginLeft: "auto",
 			marginRight: "auto",
@@ -35,7 +34,6 @@ export default class App extends React.Component {
 			backgroundColor: "#778899",
 			marginLeft: "auto",
 			marginRight: "auto",
-			height: "1200px",
 			width: "auto",
 			padding: "10px",
 		};
