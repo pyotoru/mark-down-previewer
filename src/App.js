@@ -1,6 +1,6 @@
 import React from "react";
 import Badge from "react-bootstrap/Badge";
-import "./styles.scss";
+import "./styles.css";
 
 let marked = require("marked");
 
