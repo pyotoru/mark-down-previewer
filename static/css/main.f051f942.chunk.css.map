@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAAA,EACC,UACD,CACA,WACC,wBACD,CAEA,0CACC,UACC,aACD,CACD","file":"main.f051f942.chunk.css","sourcesContent":["* {\n\tcolor: black;\n}\nblockquote {\n\tbackground-color: floralwhite;\n}\n\n@media only screen and (max-width: 1100px) {\n\tinpuStyle {\n\t\twidth: \"300px\";\n\t}\n}\n"]}
