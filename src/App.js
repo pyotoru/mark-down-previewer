@@ -22,7 +22,6 @@ export default class App extends React.Component {
 			marginRight: "auto",
 			width: "auto",
 			padding: "10px",
-			padding: "10px",
 		};
 
 		return (
