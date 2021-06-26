@@ -1,6 +1,7 @@
 import React from "react";
 import Badge from "react-bootstrap/Badge";
-import "./styles.css";
+import "./styles.scss";
+
 let marked = require("marked");
 
 export default class App extends React.Component {
@@ -15,21 +16,6 @@ export default class App extends React.Component {
 	}
 
 	render() {
-		var inputStyle = {
-			width: "300px",
-			height: "75vh",
-			marginLeft: "auto",
-			marginRight: "auto",
-			padding: "10px",
-		};
-		var outputStyle = {
-			width: "300px",
-			backgroundColor: "#DCDCDC",
-			marginLeft: "auto",
-			marginRight: "auto",
-			padding: "10px",
-			textAlign: "left",
-		};
 		var body = {
 			backgroundColor: "#778899",
 			marginLeft: "auto",
@@ -64,7 +50,6 @@ export default class App extends React.Component {
 									<div className="mark-input">
 										<textarea
 											className="input"
-											style={inputStyle}
 											value={this.state.markdown}
 											onChange={(event) => {
 												this.updateMarkdown(
@@ -87,8 +72,7 @@ export default class App extends React.Component {
 										</Badge>
 									</h1>
 									<div
-										className="align-left"
-										style={outputStyle}
+										className="output"
 										dangerouslySetInnerHTML={{
 											__html: marked(this.state.markdown),
 										}}
